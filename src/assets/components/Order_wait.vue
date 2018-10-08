@@ -134,7 +134,7 @@
           uid: this.uid,
           order_id,
           total_price: this.total_price,
-          return_url: 'http://192.168.1.118:8002/#/paySuccess'
+          return_url: 'http://localhost:8002/#/paySuccess'
         }
 
         this.$http.post(url, data).then(res => {
