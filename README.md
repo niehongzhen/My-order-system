@@ -31,4 +31,7 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 3）使用Socket.io，实现无刷新状态下同一桌号所有购物车以及订单的实时更新；
 4）使用koa2-core实现跨域，通过alipay-mobile实现支付宝支付功能。
 
+项目线上地址：
+点餐系统：http://39.105.63.62:8002/#/start?uid=A008
+
 
