@@ -29,6 +29,6 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 1）使用vue-cli搭建项目，结构清晰，代码没有过多冗余；
 2）借助CMS系统管理页面内容，可以实时更新；
 3）使用Socket.io，实现无刷新状态下同一桌号所有购物车以及订单的实时更新；
-4）使用koa2-core实现跨域，
+4）使用koa2-core实现跨域，通过alipay-mobile实现支付宝支付功能。
 
 
