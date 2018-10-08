@@ -1,0 +1,139 @@
+@charset "UTF-8";
+.menu_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  text-align: center;
+  background: #F7F7F7;
+  .search {
+    width: 70%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    padding: .3rem .3rem .3rem 1.8rem;
+    outline-color: cornflowerblue;
+  }
+  img {
+    position: absolute;
+    left: 16%;
+    top: 50%;
+    margin-top: -.7rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .search_text{
+    position: absolute;
+    right:5%;
+    font-size:1.4rem;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color:darkorange;
+
+  }
+}
+.menu_content {
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  .item {
+    .item_cate {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: .5rem;
+    }
+    .item_list {
+      width: 100%;
+      li {
+        float: left;
+        width: 33.33%;
+        padding: .5rem;
+        box-sizing: border-box;
+        .inner {
+          width: 100%;
+          border-radius: .5rem;
+          overflow: hidden;
+          background: #fff;
+          .item_img {
+            width: 100%;
+            height: 8rem;
+          }
+          p.title {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*左侧边栏*/
+.bg_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(132, 128, 128, 0.7);
+  z-index: 1;
+  transition: all .5s;
+  display: none;
+}
+
+.left_cate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 100%;
+  z-index: 2;
+  transition: all .5s;
+  transform: translate(-100%, 0);
+  ul {
+    position: relative;
+    height: 100%;
+    background: #eee;
+    padding: .2rem;
+    z-index: 2;
+    li {
+      height: 4.4rem;
+      a {
+        height: 3rem;
+        line-height: 3rem;
+        display: block;
+        text-align: center;
+        border-radius: .5rem;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  .cate_btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+    right: -3rem;
+    width: 5rem;
+    height: 4rem;
+    background: rgba(132, 128, 128, .9);
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+    z-index: 1;
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: 1.3rem;
+      margin-top: .4rem;
+    }
+    p {
+      color: #fff;
+      margin-left: 1.3rem;
+      margin-top: -0.4rem;
+    }
+
+  }
+}
+
+

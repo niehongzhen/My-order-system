@@ -1,0 +1,212 @@
+@charset "UTF-8";
+.cart_content {
+  padding: 1rem;
+  .cart_info {
+    background: #fff;
+    border-radius: .5rem;
+    padding: .8rem;
+    h3 {
+      text-align: center;
+      font-size: 1.6rem;
+      padding: .5rem 0;
+    }
+    .p_info {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      .p_info_left {
+        flex: 1;
+        padding: .3rem 0;
+        p {
+          line-height: 2;
+          &.p_number {
+            color: red;
+            font-size: 1.4rem;
+          }
+        }
+
+      }
+      .p_info_right {
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        padding: .3rem 0;
+        img {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+    }
+    .order_info {
+      padding: .3rem 0;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      p {
+        line-height: 2;
+        &.order_food {
+          color: blue;
+          font-size: 1.4rem;
+        }
+        .order_price {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: red;
+        }
+      }
+      button{
+        position: absolute;
+        right:.8rem;
+        top:2.5rem;
+        padding:.5rem 1rem;
+        background: red;
+        color:#fff;
+        border:none;
+        border-radius: .3rem;
+      }
+    }
+  }
+
+  .cart_list {
+    background: #fff;
+    border-radius: .5rem;
+    padding: .8rem;
+    margin-top:1rem;
+    h3{
+      display: inline-block;
+    }
+    .handle{
+      display: inline-block;
+      position: relative;
+      left:50%;
+      label{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color:red;
+        input{
+          margin-right: .2rem;
+          vertical-align: middle;
+        }
+      }
+      img{
+        width: 1.1rem;
+        height: 1.2rem;
+        margin-left: 1rem;
+        position: relative;
+        top:.1rem;
+      }
+    }
+    ul {
+      width: 100%;
+      margin-top: .6rem;
+      .item {
+        display: flex;
+        padding:.5rem 0;
+        border-bottom: 1px solid #eee;
+        input[type=checkbox]{
+          margin-right: .5rem;
+          margin-top: .1rem;
+        }
+        .item_left {
+          flex: 1;
+          display:flex;
+          .item_img {
+            width: 4.4rem;
+            height: 4.4rem;
+            margin-right: .8rem;
+            border-radius: .5rem;
+          }
+          .inner {
+            flex:1;
+            p {
+              line-height: 1.8;
+              &.title {
+                font-size: 1.4rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .item_right {
+          span {
+            display: inline-block;
+            width: 2.6rem;
+            height: 2.6rem;
+            line-height: 2.6rem;
+            text-align: center;
+            border: 1px solid #eee;
+            font-size: 2.4rem;
+            font-weight: bold;
+            color:red;
+            margin-left: -.3rem;
+            &.num {
+              input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                text-align: center;
+                vertical-align: top;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  /*推荐菜品样式*/
+  .hot_food{
+    margin-top:1rem;
+    background: #fff;
+    padding:.8rem;
+    border-radius:.5rem;
+    margin-bottom: 3.2rem;
+    h3{
+      padding-bottom: .5rem;
+    }
+    .item_list_outer{
+      width: 100%;
+      overflow-x: auto;
+      .item_list{
+        display: flex;
+        li{
+          width:8rem;
+          padding:0 .5rem;
+          box-sizing: border-box;
+          &:first-child{
+            padding:0 .5rem 0 0;
+          }
+          .inner{
+            width: 100%;
+            background: #fff;
+            border-radius:.5rem;
+            overflow: hidden;
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+.cart_tip{
+  text-align: center;
+  h3{
+    font-size: 1.8rem;
+    font-weight:700;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  p{
+    font-size:1.4rem;
+    line-height:1.8 ;
+    span{
+      font-size: 1.6rem;
+      color:red;
+    }
+  }
+}

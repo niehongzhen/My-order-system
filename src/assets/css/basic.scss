@@ -1,0 +1,135 @@
+@charset "utf-8";
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;   /* 根元素是10px;     16*62.5%=10  默认在pc端根元素会解析成12px    */
+}
+
+body {
+  font: 12px/1.5 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+em, i {
+  font-style: normal;
+}
+ul,li{
+  list-style-type: none;
+}
+strong {
+  font-weight: normal;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix{
+  zoom:1;
+}
+
+/*底部导航和购物车样式*/
+.footer_nav, .footer_cart,.footer_book {
+  position: fixed;
+  bottom: .5rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: .5rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-top: -0.2rem;
+  }
+}
+
+.footer_nav {
+  left: .5rem;
+  background: #000;
+}
+
+.footer_book{
+  left:50%;
+  margin-left:-2.2rem;
+  background: #000;
+}
+
+.footer_cart {
+  right: .5rem;
+  background: red;
+  span{
+    position: absolute;
+    top:-1.1rem;
+    right:0;
+    width: 2rem;
+    height: 2rem;
+    line-height:2rem;
+    border-radius:50%;
+    background: red;
+    color:#fff;
+    text-align:center;
+  }
+}
+
+.footer_nav_show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  .list {
+    li {
+      position: absolute;
+      width: 4.4rem;
+      height: 4.4rem;
+      background: #000;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      img {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top: .5rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: -0.2rem;
+      }
+      &:nth-child(1) {
+        bottom: 15.4rem;
+        left: 0;
+      }
+      &:nth-child(2) {
+        bottom: 10rem;
+        left: 40%;
+        margin-left: -2.2rem;
+      }
+      &:nth-child(3) {
+        bottom: 0rem;
+        left: 50%;
+        margin-left: -2.5rem;
+      }
+      &:nth-child(4) {
+        bottom: .5rem;
+        left: .5rem;
+      }
+    }
+
+  }
+}

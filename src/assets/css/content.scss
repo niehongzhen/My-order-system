@@ -1,0 +1,117 @@
+/*返回按钮*/
+.back{
+  position: fixed;
+  width: 3.8rem;
+  height:3.8rem;
+  line-height: 3.8rem;
+  color:#fff;
+  background: #000;
+  border-radius: 50%;
+  &:before{
+    content: '';
+    display: block;
+    width: .8rem;
+    height: .8rem;
+    border-left:.2rem solid #fff;
+    border-bottom:.2rem solid #fff;
+    float: left;
+    position: relative;
+    top:1.4rem;
+    left:.3rem;
+    margin-right: .3rem;
+    transform: rotate(45deg);
+  }
+}
+
+.content{
+  margin-bottom: 4.4rem;
+  .info{
+    background: #fff;
+    img{
+      width: 100%;
+    }
+    h2,p{
+      padding:.2rem .5rem;
+    }
+    .price{
+      color:red;
+    }
+  }
+  .detail{
+    margin-top: 1rem;
+    background: #fff;
+    h3{
+      padding:.5rem;
+    }
+    .contain{
+      padding:1rem;
+      text-align: center;
+      color:#666;
+      p{
+        text-align: left;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 4.4rem;
+  background: #fff;
+  border-top:1px solid #eee;
+  margin-top: .5rem;
+  .cart{
+    float:left;
+    margin-left: .5rem;
+    margin-top: .8rem;
+    p{
+      display: inline-block;
+      font-size: 1.6rem;
+      margin-right: .4rem;
+    }
+    .cate_num{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0;
+      letter-spacing: -.3rem;
+      span{
+        display: inline-block;
+        width: 2.6rem;
+        height: 2.6rem;
+        line-height: 2.6rem;
+        text-align: center;
+        border:1px solid #eee;
+        font-size: 1.4rem;
+        font-weight: bold;
+        overflow: hidden;
+      }
+      .num{
+        input{
+          width: 100%;
+          height: 100%;
+          border:none;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+  .add_cart{
+    float:right;
+    height: 3rem;
+    line-height: 3rem;
+    padding:.2rem .5rem;
+    background: red;
+    margin-top: .8rem;
+    margin-right: .5rem;
+    border:none;
+    border-radius: .5rem;
+    color:#fff;
+  }
+}
+
+
